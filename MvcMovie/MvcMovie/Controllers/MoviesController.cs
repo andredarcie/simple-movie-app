@@ -21,7 +21,7 @@ namespace MvcMovie.Controllers
         {
             if (id == null)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                return new HttpStatusCodeResult(HttpStatusCode.HttpVersionNotSupported);
             }
             Movie movie = db.Movies.Find(id);
             if (movie == null)
